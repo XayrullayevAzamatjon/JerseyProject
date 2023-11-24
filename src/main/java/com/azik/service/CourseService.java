@@ -48,25 +48,4 @@ public class CourseService {
     }
 
 
-//    public void addStudentToCourse(Long courseId, Student student) {
-//        Optional<Course> courseOptional = courseRepository.findById(courseId);
-//        if (courseOptional.isPresent()) {
-//            Course course = courseOptional.get();
-//            course.getStudents().add(student);
-//            courseRepository.save(course);
-//        } else {
-//            System.out.println("Course not found !");
-//        }
-//    }
-
-//    public void removeStudentFromCourse(Long courseId, Student student) {
-//        Optional<Course> courseOptional = courseRepository.findById(courseId);
-//        if (courseOptional.isPresent()) {
-//            Course course = courseOptional.get();
-//            course.getStudents().remove(student);
-//            courseRepository.save(course);
-//        } else {
-//            System.out.println("Course not found !");
-//        }
-//    }
 }

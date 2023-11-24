@@ -12,11 +12,7 @@ public class Course {
     private Long id;
     private String courseName;
     private String description;
-//    @ManyToMany(fetch = FetchType.EAGER)
-//    @JoinTable(name = "student_courses",
-//            joinColumns = {@JoinColumn(name = "student")},
-//            inverseJoinColumns = {@JoinColumn(name = "course")})
-//    private Set<Student> students=new HashSet<>();
+
 
     public Long getId() {
         return id;
@@ -42,11 +38,4 @@ public class Course {
         this.description = description;
     }
 
-//    public Set<Student> getStudents() {
-//        return students;
-//    }
-//
-//    public void setStudents(Set<Student> students) {
-//        this.students = students;
-//    }
 }

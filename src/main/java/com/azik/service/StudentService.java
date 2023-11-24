@@ -6,8 +6,6 @@ import com.azik.repository.StudentRepository;
 import com.azik.entity.Student;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -58,10 +56,8 @@ public class StudentService {
             Student student = studentOptional.get();
             Course course = courseOptional.get();
 
-            // Add the course to the student
             student.addCourse(course);
 
-            // Update the student entity in the database
             studentRepository.save(student);
 
             return student.getId();

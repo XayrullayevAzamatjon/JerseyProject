@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Configuration;
 @ApplicationPath("/api")
 public class JerseyConfig extends ResourceConfig {
     public JerseyConfig(){
-//        register(MyResource.class);
         packages("com.azik");
     }
 }

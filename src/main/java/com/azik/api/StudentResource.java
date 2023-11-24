@@ -23,8 +23,8 @@ public class StudentResource {
 //    @Path("/{size}/{page}")
 
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Student> getAllStudents(/*@PathParam("size") Integer size, @PathParam("page") Integer page*/) {
-        return studentService.getAll(/*PageRequest.of(page,size)*/);
+    public List<Student> getAllStudents() {
+        return studentService.getAll();
     }
 
     @GET
